@@ -1,0 +1,23 @@
+---
+const { currentPage, disablePrevious, disableNext } = Astro.props;
+
+interface Props {
+  currentPage: number;
+  totalPages: number;
+  disablePrevious: boolean;
+  disableNext: boolean;
+}
+---
+<div class="flex justify-between mt-10">
+  <a href={'/articles?page=' + (currentPage - 1)} class={
+    disablePrevious ? "inline-block bg-gray-100 px-3 py-2 text-gray-400 rounded-lg pointer-events-none" : "inline-block bg-teal-100 shadow-md px-3 py-2 hover:bg-teal-600 hover:text-white rounded-lg"
+  }>
+    Prev
+  </a>
+  <a href={'/articles?page=' + (currentPage + 1)} 
+    class={
+      disableNext ? "inline-block bg-gray-100 px-3 py-2 text-gray-400 rounded-lg pointer-events-none" : "inline-block bg-teal-100 shadow-md px-3 py-2 hover:bg-teal-600 hover:text-white rounded-lg"
+    }>
+    Next
+  </a>
+</div>

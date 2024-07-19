@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { capitalize } from "../utils";
+
+const allBlogArticles: CollectionEntry<'blog'>[] = await getCollection('blog');
+
+const tags: string[] = allBlogArticles.flatMap((article: any) => article.data.tags);
+
+const uniqueTags: string[] = [...new Set(tags)];
+---
+
+<footer class="bg-teal-800 text-white">
+  <div class="container mx-auto mt-10 max-w-screen-xl px-4 sm:px-8">
+    <div class="grid grid-cols-1 gap-12 sm:grid-cols-3">
+     <section class="mt-10">
+        <h3 class="text-xl tracking-wide font-bold mb-4">n00b<span class="text-yellow-400">:dev</span></h3>
+        <p class="text-white text-sm max-w-72">
+          Our mission is to simplify the learning process and empower beginners to build their coding skills with confidence.
+        </p>
+      </section>
+       <section class="mt-5 sm:mt-10">
+        <h3 class="text-xl font-bold sm:font-semibold mb-4">Tags</h3>
+        <ul class="text-white text-sm grid grid-cols-2">
+          {uniqueTags.map(tag => (
+            <li class="mb-2">
+              <a href={'/articles/tag/' + tag} class="hover:text-yellow-400">#{capitalize(tag)}</a>  
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section class="mt-5 sm:mt-10">
+        <h3 class="text-xl font-bold sm:font-semibold mb-4">Contact</h3>
+        <ul class="text-white text-sm grid grid-cols-2">
+          <li class="mb-2">
+            <a href="https://google.com" class="hover:text-yellow-400">Email</a>
+          </li>
+          <li class="mb-2">
+            <a href="https://github.com" class="hover:text-yellow-400">GitHub</a>
+          </li>
+          <li class="mb-2">
+            <a href="https://linkedin.com" class="hover:text-yellow-400">LinkedIn</a>
+          </li>
+          <li class="mb-2">
+            <a href="https://facebook.com" class="hover:text-yellow-400">Facebook</a>
+          </li>
+          <li class="mb-2">
+            <a href="https://instagram.com" class="hover:text-yellow-400">Instagram</a>
+          </li>
+          <li class="mb-2">
+            <a href="https://x.com" class="hover:text-yellow-400">X</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</footer>

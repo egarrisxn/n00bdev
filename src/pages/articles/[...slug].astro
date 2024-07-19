@@ -1,0 +1,83 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import Tags from "../../components/Tags.astro";
+import { getEntry } from 'astro:content';
+import { formatDate } from "../../utils";
+
+const { slug } = Astro.params;
+
+if(slug === undefined) {
+  throw new Error('Slug is required');
+}
+
+const entry = await getEntry('blog', slug);
+
+if(entry === undefined) {
+  return Astro.redirect('/404');
+}
+
+const { Content } = await entry.render();
+---
+
+<MainLayout>
+  <a href="/articles" class="inline-block bg-gray-100 shadow-md rounded-lg p-2 mb-6 hover:bg-teal-500 hover:text-white">Go Back</a>
+  <article class="py-2">
+    <h1 class="text-4xl xl:text-5xl font-bold mb-2"> {entry.data.title}</h1>
+    <h3 class="text-base sm:text-lg mb-3 mx-1 sm:mb-4">
+      <span class="font-bold">Author:</span>
+      {entry.data.author}
+      <br/>
+      <span class="font-bold">Date:</span>
+      {formatDate(entry.data.pubDate)}
+    </h3>
+    <Tags tags={entry.data.tags} />
+    <img src={'/images/' + entry.data.image} alt="Article Image" class="w-full h-auto rounded-xl my-6" />
+    <Content />
+  </article>
+</MainLayout>
+
+<style is:global>
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1.25em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  p {
+    margin-bottom: 1.25em;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ol li::marker {
+    color: #0d9488;
+  }
+  
+</style>

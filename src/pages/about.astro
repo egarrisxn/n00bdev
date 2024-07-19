@@ -1,0 +1,58 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import about from "../images/about.png";
+import eg from "../images/eg.png";
+import af from "../images/af.png";
+import jf from "../images/jf.png";
+---
+
+<MainLayout title="Who We Are">
+  <h1 class="text-4xl font-bold mb-5">About n00b:dev</h1>
+  <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+        <Image src={about} alt="Tech People Team" class="w-full h-auto rounded-lg shadow-lg"/>
+    </div>
+    <div class="w-full md:w-1/2">
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-4">
+        Who We Are
+      </h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        At <span class="font-bold">n00b:dev</span>, we're passionate about making programming accessible and enjoyable for beginners. We strive to provide clear, practical guidance to help you kickstart your coding journey.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Whether you're diving into your first lines of code or looking to enhance your skills, we're here to support you every step of the way. Join our community and explore our tutorials, tips, and resources designed with beginners in mind. You'll find everything you need to build a solid foundation in programming and take your projects to the next level.
+      </p>
+    </div>
+</div>
+
+<!-- Team -->
+<div class="mt-10">
+  <h2 class="text-3xl font-extrabold text-gray-900 mb-8">
+    Our Squad
+  </h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <Image src={eg} alt="Team Member 1" class="w-full h-auto"/>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Evan Bourne</h3>
+            <p class="text-gray-70">CEO & Founder</p>
+        </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <Image src={af} alt="Team Member 2" class="w-full h-auto"/>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Anthony Foss</h3>
+            <p class="text-gray-70">General Manager</p>
+        </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <Image src={jf} alt="Team Member 3" class="w-full h-auto"/>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Juliana Theopolus</h3>
+            <p class="text-gray-70">Social Media Manager</p>
+        </div>
+    </div>
+  </div>
+</div>
+</MainLayout>
