@@ -1,10 +1,10 @@
 # n00bdev
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/n00bdev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/n00bdev) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/n00bdev)
 
 ## Overview
 
-Welcome to **n00bdev**, a cutting-edge, server-side rendered blog built with the powerful trio of **Astro**, **TypeScript**, and **TailwindCSS**. Designed with rookie developers in mind, n00bdev offers a smooth learning curve while incorporating modern web development best practices.
+Welcome to **n00bdev**, a cutting-edge, server-side rendered blog built with the powerful trio of **Astro**, **TypeScript**, and **Tailwind CSS**. Designed with rookie developers in mind, n00bdev offers a smooth learning curve while incorporating modern web development best practices.
 
 ![n00bdev](https://github.com/egarrisxn/n00bdev/assets/126130230/53cf572e-bc9b-49cf-ba71-8b70d229062c)
 
@@ -23,7 +23,7 @@ In the rapidly evolving landscape of web development, staying up-to-date with th
 
 - **Astro**: A modern static site generator with a focus on performance and simplicity.
 - **TypeScript**: A statically typed superset of JavaScript that adds type safety to your code.
-- **TailwindCSS**: A utility-first CSS framework for rapidly building custom designs.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 - **Vercel**: A platform for static sites and serverless functions, providing a frictionless deployment experience.
 
 ## Getting Started
