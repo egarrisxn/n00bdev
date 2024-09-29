@@ -2,7 +2,7 @@
   "name": "n00bdev",
   "type": "module",
   "version": "1.0.0",
-  "description": "n00bdev is a server-side rendered blog using the powers of Astro, Typescript, & TailwindCSS.",
+  "description": "SSR blog powered by Astro, Typescript, & Tailwind CSS.",
   "homepage": "https://n00bdev.vercel.app",
   "author": "Ethan G. (https://egxworld.net)",
   "license": "MIT",
