@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "SSR blog powered by Astro, Typescript, & Tailwind CSS.",
   "homepage": "https://n00bdev.vercel.app",
-  "author": "Ethan G. (https://egxworld.net)",
+  "author": "Ethan G. (https://egxo.dev)",
   "license": "MIT",
   "private": true,
   "keywords": [
