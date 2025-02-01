@@ -1,12 +1,12 @@
 # n00bdev
 
+![n00bdev](https://github.com/user-attachments/assets/72726b98-78b0-4d39-bbbd-125c516646c5)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/n00bdev) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/n00bdev)
 
 ## Overview
 
 Welcome to **n00bdev**, a cutting-edge, server-side rendered blog built with the powerful trio of **Astro**, **TypeScript**, and **Tailwind CSS**. Designed with rookie developers in mind, n00bdev offers a smooth learning curve while incorporating modern web development best practices.
-
-![n00bdev](https://github.com/egarrisxn/n00bdev/assets/126130230/53cf572e-bc9b-49cf-ba71-8b70d229062c)
 
 ## Why n00bdev?
 
