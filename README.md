@@ -1,4 +1,4 @@
-# n00bdev
+# n00bdev - Tips & Tricks
 
 ![n00bdev](https://github.com/user-attachments/assets/72726b98-78b0-4d39-bbbd-125c516646c5)
 
