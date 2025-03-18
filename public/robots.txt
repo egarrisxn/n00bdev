@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /_render
+Sitemap: https://n00bdev.vercel.app/sitemap.xml
