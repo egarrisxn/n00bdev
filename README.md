@@ -69,4 +69,7 @@ This project is licensed under the [MIT license](https://opensource.org/licenses
 
 ## Questions
 
-Feel free to reach out to me via [GitHub](https://github.com/egarrisxn), or email at egarrisxn@gmail.com.
+If you have any questions or need further assistance, feel free to reach out:
+
+- **GitHub:** [EGARRISXN](https://github.com/EGARRISXN)
+- **Email:** [egarrisxn@gmail.com](mailto:egarrisxn@gmail.com)
