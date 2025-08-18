@@ -7,12 +7,6 @@
   "author": "Ethan G. (https://egxo.dev)",
   "license": "MIT",
   "private": true,
-  "keywords": [
-    "astro",
-    "typescript",
-    "tailwindcss",
-    "vercel"
-  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
